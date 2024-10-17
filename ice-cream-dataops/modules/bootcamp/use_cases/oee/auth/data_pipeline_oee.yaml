@@ -1,18 +1,20 @@
- name: test
-  
-      # OBJECT ID FOR TEST/PROD DATA PIPELINE OEE ENTRA GROUP
-      data_pipeline_oee_source_id: 1cd8be57-e357-4137-9b60-8dc73053d0be
-      
+name:
+  test
+
+  # OBJECT ID FOR TEST/PROD DATA PIPELINE OEE ENTRA GROUP
+data_pipeline_oee_source_id: 1cd8be57-e357-4137-9b60-8dc73053d0be
+
+capabilities:
   - assetsAcl:
       actions: [READ]
       scope:
         datasetScope:
-          ids: [{{ icapi_ds_external_id }}]
+          ids: [{ { icapi_ds_external_id } }]
   - datasetsAcl:
       actions: [READ]
       scope:
         idScope:
-          ids: [{{ uc_oee_ds_external_id }}, {{ icapi_ds_external_id }}]
+          ids: [{ { uc_oee_ds_external_id } }, { { icapi_ds_external_id } }]
   - groupsAcl:
       actions: [LIST, READ]
       scope:
@@ -29,9 +31,9 @@
       actions: [READ]
       scope:
         datasetScope:
-          ids: [{{ icapi_ds_external_id }}]
+          ids: [{ { icapi_ds_external_id } }]
   - timeSeriesAcl:
       actions: [READ, WRITE]
       scope:
         datasetScope:
-          ids: [{{ uc_oee_ds_external_id }}]
+          ids: [{ { uc_oee_ds_external_id } }]
