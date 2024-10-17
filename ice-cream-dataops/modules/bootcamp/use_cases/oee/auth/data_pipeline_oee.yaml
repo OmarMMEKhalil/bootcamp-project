@@ -1,5 +1,5 @@
 name:
-  test
+  data_pipeline_oee
 
   # OBJECT ID FOR TEST/PROD DATA PIPELINE OEE ENTRA GROUP
 #data_pipeline_oee_source_id: 1cd8be57-e357-4137-9b60-8dc73053d0be
