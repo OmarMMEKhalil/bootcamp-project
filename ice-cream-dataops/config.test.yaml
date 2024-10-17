@@ -36,6 +36,7 @@ variables:
       icapi_extractors_client_secret: ${ICAPI_EXTRACTORS_CLIENT_SECRET} # replaced by .env
       #ice_cream_api:
       icapi_ds_external_id: ds_icapi
+      oee_ds_external_id: ds_uc_oee
 
       use_cases:
         oee:
