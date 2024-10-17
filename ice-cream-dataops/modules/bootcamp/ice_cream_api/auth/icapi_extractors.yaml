@@ -1,7 +1,7 @@
 name: icapi_extractors
-
+sourceId: { { icapi_extractors_source_id } }
 # OBJECT ID FOR TEST/PROD ADMIN TK ENTRA GROUP
-icapi_extractors_source_id: ef570c2a-f7cb-4006-b23c-157a60da0b06
+#icapi_extractors_source_id: ef570c2a-f7cb-4006-b23c-157a60da0b06
 capabilities:
   - assetsAcl:
       actions: [READ, WRITE]
