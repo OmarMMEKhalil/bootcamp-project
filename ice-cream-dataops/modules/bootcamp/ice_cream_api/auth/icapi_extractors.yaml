@@ -1,33 +1,33 @@
 name: test
- 
+
 # OBJECT ID FOR TEST/PROD ADMIN TK ENTRA GROUP
 icapi_extractors_source_id: ef570c2a-f7cb-4006-b23c-157a60da0b06
-      
+capabilities:
   - assetsAcl:
       actions: [READ, WRITE]
       scope:
         datasetScope:
-          ids: [{{ icapi_ds_external_id }}]
+          ids: [{ { icapi_ds_external_id } }]
   - datasetsAcl:
       actions: [READ]
       scope:
         idScope:
-          ids: [{{ icapi_ds_external_id }}]
+          ids: [{ { icapi_ds_external_id } }]
   - extractionPipelinesAcl:
       actions: [READ]
       scope:
         datasetScope:
-          ids: [{{ icapi_ds_external_id }}]
+          ids: [{ { icapi_ds_external_id } }]
   - extractionRunsAcl:
       actions: [READ, WRITE]
       scope:
         datasetScope:
-          ids: [{{ icapi_ds_external_id }}]
+          ids: [{ { icapi_ds_external_id } }]
   - filesAcl:
       actions: [READ, WRITE]
       scope:
         datasetScope:
-          ids: [{{ icapi_ds_external_id }}]
+          ids: [{ { icapi_ds_external_id } }]
   - functionsAcl:
       actions: [READ, WRITE]
       scope:
@@ -55,9 +55,9 @@ icapi_extractors_source_id: ef570c2a-f7cb-4006-b23c-157a60da0b06
       actions: [READ, WRITE]
       scope:
         datasetScope:
-          ids: [{{ icapi_ds_external_id }}]
+          ids: [{ { icapi_ds_external_id } }]
   - transformationsAcl:
       actions: [READ, WRITE]
       scope:
         datasetScope:
-          ids: [{{ icapi_ds_external_id }}]
+          ids: [{ { icapi_ds_external_id } }]
