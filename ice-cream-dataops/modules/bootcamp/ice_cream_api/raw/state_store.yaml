@@ -1,0 +1,2 @@
+- dbName: state_store
+  tableName: icapi_datapoints_extractor
